@@ -1,0 +1,100 @@
+/* Full-page background */
+body {
+  background: rgb(9, 107, 101) no-repeat fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centered table with styling */
+table {
+  width: 80%;
+  margin: 40px auto;
+  border-collapse: collapse; /* single borders for tidiness */
+  background: rgb(124, 154, 167);
+  border: 2px solid #999;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Header text centering */
+table.list {
+  text-align: center;
+  width: 100%;
+}
+
+/* Table cells */
+th, td {
+  border: 1px solid rgb(204, 200, 200);
+  padding: 12px 15px;
+}
+
+/* Header stands out */
+thead th {
+  background-color: #4b99d8;
+  color: white;
+  font-weight: bold;
+}
+
+/* Alternating row colors for readability */
+tbody tr:nth-child(even) {
+  background-color: rgb(204, 200, 200);
+}
+tbody tr:nth-child(odd) {
+  background-color: #efefef;
+}
+
+/* Hover effect improves interactivity */
+tbody tr:hover {
+  background-color: #d0e7f9;
+  cursor: pointer;
+}
+
+/* Rounded corners on first/last cells of header */
+thead tr th:first-child { border-top-left-radius: 8px; }
+thead tr th:last-child { border-top-right-radius: 8px; }
+
+/* Responsive table wrapper */
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Styled form inputs */
+input[type="text"],
+input[type="number"] {
+  width: calc(100% - 40px);
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid rgb(165, 161, 161);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Styled buttons */
+input[type="submit"],
+input[type="reset"],
+button {
+  background: #eee;
+  padding: 8px 16px;
+  margin: 15px 5px 10px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+  background-color: #4b99d8;
+  color: white;
+}
+
+/* Visual focus for accessibility */
+input:focus,
+button:focus {
+  outline: 2px solid #4b99d8;
+  outline-offset: 2px;
+}
